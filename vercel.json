@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "sic":"bot.py",
+            "use":"@vercel/python"
+        }
+    ],
+    "routes":[
+        {
+            "sic" : "/(.*)",
+            "dest" : "bot.py"
+        }
+    ]
+}
