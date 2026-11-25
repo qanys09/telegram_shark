@@ -109,7 +109,7 @@ class StartupArchive:
 
         try:
             response = client.models.generate_content(
-                model=GEMINI_API_KEY
+                model=GEMINI_API_KEY,
                 contents=prompt
             )
             raw_text = response.text or ""
